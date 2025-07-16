@@ -1,12 +1,56 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
 body {
-    background-color: #e2daee;
+    background-color: rgb(236, 207, 190);
+    height: 500px;
+}
+
+.navBar {
+    background-color: #abccd9;
+    top: 0;
+    width: 150px;
     height: 100vh;
+    position: sticky;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    padding: 8px;
+    width: 100%;
+    height: 110px;
+    display: grid;
+    place-items: center;
+}
+
+footer {
+    background-color: #427f80;
+    height: 50px;
     width: 100%;
     display: grid;
     place-items: center;
 }
 
-h2 {
-    color: #896bb6;
-    font-size: 50px;
+.navImg {
+    width: 80px;
+}
+
+.navIcon {
+    width: 30px;
+}
+
+a {
+    text-decoration: none;
 }
